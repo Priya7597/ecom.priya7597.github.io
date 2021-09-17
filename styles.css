@@ -1,0 +1,419 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    /*font-family: 'Playfair Display', serif;
+    */
+    font-family: 'Rubik', sans-serif;
+}
+table{
+    background-color: rgb(71, 78, 85);
+    color: white;
+    font-size:20px;
+    width:100%;
+}
+table tr th{
+    border-right:2px solid white;
+    padding:20px;
+    letter-spacing: 5px;
+}
+.logo{
+    width: 300px;
+    height: 100px;
+    position: absolute;
+    left:80px;
+}
+.fa-caret-down {
+    float: right;
+    padding-right: 8px;
+}
+ul {
+    list-style-type: none;
+    overflow: hidden;
+    background-color: transparent;
+    position:absolute;
+    left:24%;
+}
+li {
+    float: left;
+}
+.header li:hover{
+    background-color:rgba(71, 78, 85, 0.404) ;
+}
+.header ul li a {
+    display: block;
+    color:  rgb(71, 78, 85);
+    text-align: center;
+    padding: 50px 70px;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: bold;  
+}
+.dropdown {
+    font-size: 28px;
+    color:  rgb(71, 78, 85);
+    padding: 5px;
+    border:transparent;
+    background-color: transparent;
+}
+.rightlist{
+    position:absolute;
+    left:75%;
+    padding: 20px 70px;
+}
+.rightlist button{
+    padding:18px;
+    font-size: 60px;
+    cursor: pointer;
+}
+.mainimg{
+    width:100%;
+    height:70%;
+    position: absolute;
+    top:18%;
+}
+.head{
+    position: absolute;
+    top:90%;
+    left:35%;
+}
+.head p{
+    text-align: center;
+    font-size: 28px;
+}
+h1{
+    font-size: 50px;
+    letter-spacing: 12px;
+    font-weight: 25px;
+    text-shadow: 1px 1px 2px black;
+}
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top: 100%;
+}
+.flex {
+    width: 20%;
+    height: 100vh;
+    padding: 20px ;
+    margin:50px;
+}
+.flex p{
+    font-size: 35px;
+    font-weight: bolder;
+    color:  rgb(71, 78, 85);
+    letter-spacing: 6px;
+    padding-top:20px;
+}
+.flex-container img{
+    width:500px;
+    height:500px;
+    cursor: pointer;
+}
+.flex-container img:hover{
+    background-color: rgba(128, 128, 128, 0.644);
+}
+.rating input {
+    display: none;
+}
+.rating input + label {
+    font-size: 20px;
+    cursor: pointer;
+    color:black;
+}
+.rating input:checked + label ~ label {
+    color:gray;
+}
+.rating label:active {
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+.flex button{
+    text-align: center;
+    padding:5px;
+    background-color: black;
+    color:white;
+    font-size: 30px;
+    cursor: pointer;
+}
+.pinkdiv{
+    background-color: rgb(252, 233, 236);
+    height:1000px;
+    width:100%;
+    position: absolute;
+    top:2100px;
+    padding:5px 15px;
+}
+.centerhead{
+    position: absolute;
+    left:35%;
+    padding: 30px;
+}   
+.pinkdiv button{
+    padding:0px 20px;
+    font-size: 138px;
+    background-color: transparent;
+    color:gray;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    top:20%;
+    left:200px;
+} 
+.flex2-container {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    top:15%;
+}
+.flex2{
+    width:20%;
+    height: 80vh;
+    padding: 10px 30px;
+}
+.flex2 img{
+    width:100%;
+    height:450px;
+}
+.flex2 p{
+    font-size: 28px;
+}
+.blue{
+    background-color: skyblue;
+    padding: 10px 30px;
+    color:white;
+    text-align:center;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 15px skyblue;
+}
+.green{
+    background-color: rgb(6, 168, 82);
+    padding: 10px 30px;
+    color:white;
+    text-align:center;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 15px rgb(6, 168, 82);
+    
+}
+.yellow{
+    background-color: rgb(189, 172, 22);
+    padding: 10px 30px;
+    color:white;
+    text-align:center;
+    font-weight: bolder;
+    box-shadow: 0px 0px 10px 15px rgb(189, 172, 22);
+}
+.title{
+    position: absolute;
+    top: 3150px;
+    left:42%;
+}
+.gridview{
+    display: grid;
+    grid-template-columns:50% 45% ;
+    grid-template-rows: 500px 500px ;
+    height:1000px;
+    grid-gap:20px 20px;
+/*  grid-area: content;
+    grid-template-rows: 700px 200px 200px;
+    grid-row:1/3;
+    grid-template-columns:repeat(2,500px) ;
+    grid-gap:20px 20px;
+*/
+    position:absolute;
+    top: 3300px;
+    left:300px;
+}
+.gridview img{
+    width:100%;
+    height:100%;
+}
+.box1{
+    grid-row:1/3;
+}
+
+.box1 button, .box2 button, .box3 button{
+    background-color: gray;
+    color:white;
+    font-size:30px;
+    padding:10px 50px;
+    border: transparent;
+    cursor: pointer;  
+}
+.box1 button{
+    position:absolute;
+    top:90%;
+    left:5%;
+}
+.box2 button{
+    position:absolute;
+    top: 40%;
+    left:55%;
+}
+.box3 button{
+    position:absolute;
+    top:90%;
+    left:55%;
+}
+.symbols{
+    padding:50px;
+}
+.symbols figure{
+    position: absolute;
+    top: 4400px; 
+    left:30%;
+}
+.symbols figure img{
+    height:100px;
+    width:100px;
+}
+.symbols figure figcaption{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.title2{
+    position: absolute;
+    top: 4650px;
+    left:35%;
+}
+.border{
+    border:1px solid gray
+}
+.flex3-container{
+    position: absolute; 
+    top:4800px;
+    left:50px;
+}
+.height{
+    height:100px;
+}
+
+.flex3-container .flex2 button{
+    font-size: 138px;
+    background-color: transparent;
+    color:gray;
+    border:none;
+    cursor: pointer;
+    position: absolute;
+    top:15%;
+    left:200px;
+} 
+iframe{
+    width: 100%;
+    height:80vh;
+    padding:100px;
+    position: absolute; 
+    top:5450px;
+    left:50px;
+}
+.title3{
+    position: absolute;
+    top: 6450px;
+    left:35%;
+}
+.subtitle{
+    position: absolute;
+    top: 6500px;
+    left:43%;
+    font-size:35px;
+}
+.gridgallery{
+    display:grid;
+    grid-template-columns: repeat(4,20%);
+    column-gap: 80px;
+    position: absolute;
+    top: 6700px;
+}
+.img1 img, .img2 img, .img3 img, .img4 img{
+    width:100%;
+    max-width: 100%;
+    height:100%;
+    margin-left: 150px;
+}
+.footer{
+    height:400px;
+    width:100%;
+    color:white;
+    font-size: 30px;
+    font-weight: bolder;
+    background-color: rgb(71, 78, 85);
+    display:grid;
+    grid-template-columns: 25% 30% 25% 30%;
+    column-gap: 60px;
+    position: absolute;
+    top: 7300px;
+}
+.col1{
+    position: absolute;
+    left:50px;
+    padding:15px;
+}
+.col2{
+    position: absolute;
+    left:20%;
+    padding:15px;
+}
+.col3{
+    position: absolute;
+    left:40%;
+    padding:15px;   
+}
+.col4{
+    position: absolute;
+    left:70%;
+    padding:15px;
+}
+.col4 input{
+    outline: none;
+    width:85%;
+    font-size: 32px;
+    color:black;
+    background-color: rgb(255, 255, 255);
+    padding:15px;
+}
+.col4 button{
+    background-color: white;
+    padding:20px;
+    font-size: 32px;
+    cursor: pointer;
+}
+.footer ul li{
+    font-size: 25px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    cursor:default;
+}
+.footer li:hover{
+    background-color:rgba(71, 78, 85, 0.568) ;
+}
+.footer ul li a{
+    text-decoration: none;
+    color:white;
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+.categorygrid{
+    display:grid;
+    grid-template-columns:10% 20% 20% 20% 20% 10%;
+    column-gap: 10px;
+    position: absolute;
+    top: 4800px;
+}
+.b1 img, .b2 img, .b3 img, .b4 img, .btn1 button, .btn2 button{
+    width:100%;
+    max-width: 100%;
+    height:100%;
+    padding:20px;
+    margin:7px;
+}
+.btn1 button, .btn2 button{
+    font-size: 150px;
+    border: none;
+    background-color: transparent;
+}
+.btn1 button:hover, .btn2 button:hover{
+    background-color: rgba(128, 128, 128, 0.664);
+}
